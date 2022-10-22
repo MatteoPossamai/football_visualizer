@@ -81,9 +81,9 @@ class Test(unittest.TestCase):
         self.assertEqual(roaster['Bernardo Silva'].number, '20')
         self.assertEqual(roaster['Bernardo Silva'].position, 'C')
 
-        self.assertEqual(roaster['Erling Håland'].name, 'Erling Håland')
-        self.assertEqual(roaster['Erling Håland'].number, '9')
-        self.assertEqual(roaster['Erling Håland'].position, 'A')
+        self.assertEqual(roaster['Riyad Mahrez'].name, 'Riyad Mahrez')
+        self.assertEqual(roaster['Riyad Mahrez'].number, '26')
+        self.assertEqual(roaster['Riyad Mahrez'].position, 'A')
 
     def test_real_madrid_endpoint(self):
         scraper3 = scraper.WikiScraper('https://es.wikipedia.org/wiki/Real_Madrid_Club_de_F%C3%BAtbol')
