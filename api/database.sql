@@ -35,11 +35,3 @@ CREATE TABLE IF NOT EXISTS player (
     PRIMARY KEY (id),
     FOREIGN KEY (team_id) REFERENCES team(id)
 );
-
-/* The linking between teams and players structure definition */
-CREATE TABLE IF NOT EXISTS belongs (
-    team FOREIGN KEY REFERENCES team(id),
-    player FOREIGN KEY REFERENCES player(id)
-
-    PRIMARY KEY (team, player)
-);

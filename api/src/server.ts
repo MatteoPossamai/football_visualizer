@@ -16,6 +16,10 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use(express.json());
 
+// routes
+app.use('/api/players', require('./routes/playerRoutes'));
+app.use('/api/teams', require('./routes/teamRoutes'));
+
 // starting the server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
