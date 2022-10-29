@@ -17,6 +17,6 @@ router.put('/:id', teamsController.updateTeam);
 
 // DELETE
 router.delete('/:id', teamsController.deleteTeam);
-router.delete('/', teamsController.deleteAllTeams);
+router.delete('/delete/all/teams/sudoDeleteAllTeams', teamsController.deleteAllTeams);
 
 module.exports = router;

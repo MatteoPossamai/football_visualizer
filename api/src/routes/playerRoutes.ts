@@ -18,6 +18,6 @@ router.put('/:id', playerController.updatePlayer);
 
 // DELETE
 router.delete('/:id', playerController.deletePlayer);
-router.delete('/', playerController.deleteAllPlayers);
+router.delete('/delete/all/players/sudoDeleteAllPlayers', playerController.deleteAllPlayers);
 
 module.exports = router;

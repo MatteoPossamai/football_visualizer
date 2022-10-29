@@ -48,9 +48,9 @@ const createPlayer = async (name: string, number: number, role: string, national
 }
 
 // PUT
-const updatePlayer = async (id: number, name: string, age: number, position: string, teamId: number) : Promise<any> => {
+const updatePlayer = async (id: number, name: string, number:number, role: string, nationality: string, teamId: number) : Promise<any> => {
     try{
-        const response = await client.query('UPDATE player SET name = $1, age = $2, position = $3, team_id = $4 WHERE id = $5 RETURNING *;', [name, age, position, teamId, id]);
+        const response = await client.query('UPDATE player SET name = $1, number = $2, role = $3, nationality = $4, team_id = $5 WHERE id = $6 RETURNING *;', [name, number, role, nationality, teamId, id]);
         return [response.rows[0], 200];
     }catch(err){
         console.log(err);

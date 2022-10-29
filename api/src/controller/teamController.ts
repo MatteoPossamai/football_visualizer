@@ -15,13 +15,13 @@ const getTeamById = async (req: Request, res: Response) => {
 
 // POST
 const createTeam = async (req: Request, res: Response) => {
-    const [response, status] = await functions.createTeam(req.body.name, req.body.colors, req.body.symbols, req.body.anthem, req.body.city, req.body.nation, req.body.confederation, req.body.federation, req.body.championship, req.body.foundation, req.body.owner, req.body.president, req.body.manager, req.body.stadium, req.body.places, req.body.website, req.body.trophies);
+    const [response, status] = await functions.createTeam(req.body.name, req.body.colors, req.body.symbols, req.body.anthem, req.body.city, req.body.nation, req.body.confederation, req.body.federation, req.body.championship, req.body.foundation, req.body.owner, req.body.president, req.body.manager, req.body.stadium, req.body.stadium_capacity, req.body.places, req.body.website, req.body.trophies);
     res.status(status).json(response);
 }
 
 // PUT
 const updateTeam = async (req: Request, res: Response) => {
-    const [response, status] = await functions.updateTeam(req.params.id, req.body.name, req.body.colors, req.body.symbols, req.body.anthem, req.body.city, req.body.nation, req.body.confederation, req.body.federation, req.body.championship, req.body.foundation, req.body.owner, req.body.president, req.body.manager, req.body.stadium, req.body.places, req.body.website, req.body.trophies);
+    const [response, status] = await functions.updateTeam(req.params.id, req.body.name, req.body.colors, req.body.symbols, req.body.anthem, req.body.city, req.body.nation, req.body.confederation, req.body.federation, req.body.championship, req.body.foundation, req.body.owner, req.body.president, req.body.manager, req.body.stadium, req.body.stadium_capacity, req.body.places, req.body.website, req.body.trophies);
     res.status(status).json(response);
 }
 
