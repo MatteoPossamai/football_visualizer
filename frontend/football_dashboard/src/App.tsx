@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
 
+// Components
+import Base from './components/base';
+
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Base />
     </div>
   );
 }
