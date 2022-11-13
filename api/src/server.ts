@@ -17,8 +17,10 @@ app.use(cors());
 app.use(express.json());
 
 // routes
-app.use('/api/players', require('./routes/playerRoutes'));
-app.use('/api/teams', require('./routes/teamRoutes'));
+app.use('/v1/api/players', require('./routes/playerRoutes'));
+app.use('/v1/api/teams', require('./routes/teamRoutes'));
+app.use('/v1/api/links', require('./routes/linkRoutes'));
+app.use('/api/dbUpdate', require('./routes/dbUpdate'));
 
 // starting the server
 app.listen(PORT, () => {

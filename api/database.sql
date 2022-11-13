@@ -34,3 +34,8 @@ CREATE TABLE IF NOT EXISTS player (
 
     FOREIGN KEY (team_id) REFERENCES team(id)
 );
+
+CREATE TABLE IF NOT EXISTS link (
+    id serial primary key, 
+    url VARCHAR(255) NOT NULL,
+);
