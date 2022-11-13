@@ -1,11 +1,13 @@
 import Header  from "./header";
+import Content from "./content";
+import Footer  from "./footer";
 
 function Base(){
     return (
-        <div>
+        <div className="flex-wrapper">
             <Header />
-            <div> CONTENT </div>
-            <footer> FOOTER </footer>
+            <Content />
+            <Footer />
         </div>
     )
 }

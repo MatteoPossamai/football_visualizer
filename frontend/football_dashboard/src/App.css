@@ -10,6 +10,7 @@
 .header{
   width: 100%;
   text-align: center;
+  background-color: #2ad12a;
 }
 
 .header-title{
@@ -25,8 +26,219 @@
 .header-button{
   font-size: 2em;
   font-weight: 400;
-  height: 50%;
+  height: 70px;
   width:33.33%;
+  color: white;
+  background-color: #2ad12a;
+  border: 3px solid #fff;
+  transition: 0.5s;
+}
+
+.header-button:hover{
+  background-color: #fff;
+  color:#2ad12a;
+}
+
+.header-top-line{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-image{ 
+  width:100px;
+  height:100px;
+  padding: 20px;
+}
+
+.first{
+  float:left;
+}
+
+.last{
+  float: right;
+}
+
+.search{
+  float: right;
+}
+
+.search input{
+  width: 200px;
+  height: 20px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search button{
+  font-size: 1.3em;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /* END HEADER STYLE */
+
+/* FOOTER STYLE */
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer {
+  border-top: 3px solid black;
+  margin-top: auto;
+  width: 100%;
+  min-height: 200px;
+  background-color: #6f8573;
+}
+
+.footer__container{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__block{
+  width:30%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+ol{
+  margin-left: 20px;
+  color:aliceblue;
+}
+
+a{
+  color:aliceblue;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 2px;
+}
+
+/* END FOOTER STYLE */
+
+/* ABOUT PAGE STYLE */
+article{
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.about{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.about-p{
+  width: 95%;
+  margin: auto;
+  font-size: 1em;
+  color: black;
+}
+
+.about-a{
+  color: #2ad12a;
+}
+
+section{
+  background-color: #b7ba0f;
+  border: 3px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* END ABOUT PAGE STYLE */
+
+/* CONTACT PAGE STYLE */
+
+.main{
+  width: 100%;
+  text-align: center;
+  font-size: 1.7em;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+
+}
+
+.sectCenter{
+  margin: auto;
+  width: 30%;
+  margin-top: 30px;
+  border: #000 3px solid;
+  border-radius: 20px 20px 0 0;
+}
+
+.sectCenter ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sectCenter ul li{
+  padding: 10px;
+  border: #000 3px solid;
+  transition: 0.5s;
+  background-color: #a2f2cd;
+}
+
+.sectCenter ul li:hover{
+  transform: scale(1.1);
+  background-color: #36b5ff;
+  border-radius: 10px;
+}
+
+/* END CONTACT PAGE STYLE */
+
+/* 404 */
+.code404{
+  animation: ease-out 2s slideInFromBottom;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  color:#a8b2d1;
+  font-size: 2em;
+}
+
+.backhome{
+  color: #61f7d4;
+  font-size: 1.5em;
+  transition: .3s;
+  text-decoration: none;
+  border: #61f7d4 solid 4px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.backhome:hover{
+  color: #0a192f;
+  background-color: #61f7d4;
+  transition: .3s;
+}
+/* END 404 */
+
+/* TEAMS PAGE */
+.teamsPage{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.teamsPage a{
+  color: #2ad12a;
+}
+
+.teamsPage h3{
+  width: 50%;
+  margin: auto;
+}
